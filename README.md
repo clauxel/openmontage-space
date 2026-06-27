@@ -9,5 +9,6 @@ The public site is generated into `public/` and served by a Cloudflare Worker. I
 - A paid planner gate that returns `402` until Polar checkout access is verified.
 - D1 analytics hooks for page views, CTA clicks, pricing toggles, checkout starts, paid-gate hits, planner submissions, and AI/referral classification.
 - Trust data and trust content for the OpenMontage upstream source boundary.
+- Google Trends same-request keyword evidence that compares each confirmed keyword with `mirofish` and records `relativeHeatVsMirofish`.
 
 OpenMontage Space is not an official OpenMontage property. Official source information is kept in source notes and docs copy rather than in primary CTAs.

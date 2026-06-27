@@ -132,17 +132,17 @@ const keywordEvidence = await readFile(new URL('keyword-evidence/index.html', ro
 for (const needle of [
   'OpenMontage keyword evidence',
   'Relative heat vs mirofish',
-  'pending_same_request_trends',
-  'blocked_trends_pending_browser_dom',
-  'AI video production',
-  'agentic video production',
-  'open source AI video production system',
+  'confirmed_same_request_trends',
+  'official Google Trends same-request',
+  'AI video generator',
+  'video production pipeline',
+  'AI video workflow',
   'AI video cost estimator',
 ]) {
   if (!keywordEvidence.toLowerCase().includes(needle.toLowerCase())) throw new Error('Keyword evidence page missing expected copy: ' + needle)
 }
-if (/validated traffic keyword/i.test(keywordEvidence) && !/No row is marked as a validated traffic keyword yet/i.test(keywordEvidence)) {
-  throw new Error('Keyword evidence page must not imply pending terms are validated traffic keywords')
+for (const stale of ['pending_same_request_trends', 'blocked_trends_pending_browser_dom', 'No row is marked as a validated traffic keyword yet']) {
+  if (keywordEvidence.includes(stale)) throw new Error('Keyword evidence page still contains stale blocked copy: ' + stale)
 }
 
 const sitemap = await readFile(new URL('sitemap.xml', root), 'utf8')
@@ -152,18 +152,25 @@ for (const route of ['planner', 'video-pipeline-selector', 'reference-video-brie
   if (!sitemap.includes('/' + route + '/')) throw new Error('Sitemap missing route: ' + route)
 }
 
-if (product.keywordValidation?.status !== 'pending_mirofish_trends' ||
-  product.keywordValidation?.confirmedTrafficKeywords !== 0 ||
+if (product.keywordValidation?.status !== 'keyword_validation_passed' ||
+  product.keywordValidation?.source !== 'official_google_trends_api_same_request_plus_browser_chart' ||
+  product.keywordValidation?.confirmedTrafficKeywords !== 14 ||
+  product.keywordValidation?.confirmedPrimaryKeywords !== 6 ||
+  product.keywordValidation?.confirmedLongTailKeywords !== 8 ||
   product.keywordValidation?.relativeHeatUnit !== 'termAvg / mirofishAvg' ||
   product.keywords?.length !== 14 ||
   product.keywords?.filter((row) => row.themeRelevance === 'strong').length !== 14 ||
-  product.keywords?.filter((row) => row.relativeHeatVsMirofish === '-').length !== 14) {
+  product.keywords?.filter((row) => row.validationState === 'confirmed_same_request_trends').length !== 14 ||
+  product.keywords?.filter((row) => row.type === 'primary').length !== 6 ||
+  product.keywords?.filter((row) => row.type === 'long-tail').length !== 8 ||
+  product.keywords?.some((row) => !(Number(row.relativeHeatVsMirofish) > 0) || !(Number(row.termAvg) > 0) || !(Number(row.mirofishAvg) > 0) || !(Number(row.nonZeroWeeks) > 0))) {
   throw new Error('product.json keyword validation metadata is incomplete')
 }
 
 if (product.trustDataLedger?.length < 3 ||
   product.gates?.trust_data_gate !== 'pass_local' ||
-  product.gates?.trust_content_gate !== 'pass_local') {
+  product.gates?.trust_content_gate !== 'pass_local' ||
+  product.gates?.keyword_gate !== 'pass_google_trends_same_request') {
   throw new Error('Trust data/content gate metadata is incomplete')
 }
 
@@ -222,6 +229,12 @@ if (response.status !== 200) throw new Error('/api/runtime did not return 200')
 const runtime = await response.json()
 if (!runtime.ok || runtime.product !== product.brand || !runtime.upstreamRepo || runtime.mode !== 'independent_unofficial_companion' || runtime.paymentProvider !== 'polar' || !runtime.pricing || runtime.plannerAccess !== 'paid_access_required' || !runtime.accessEndpoint || !runtime.analyticsConfigured) {
   throw new Error('runtime response is incomplete')
+}
+if (runtime.keywordValidation?.status !== 'keyword_validation_passed' ||
+  runtime.keywordValidation?.confirmedTrafficKeywords !== 14 ||
+  runtime.keywordValidation?.confirmedPrimaryKeywords !== 6 ||
+  runtime.keywordValidation?.confirmedLongTailKeywords !== 8) {
+  throw new Error('runtime keyword validation response is incomplete')
 }
 if (runtime.defaultBilling !== 'annual' ||
   runtime.pricing.starter?.annual?.displayMonthlyUsd !== 4.5 ||
@@ -299,6 +312,11 @@ const facts = await response.json()
 if (facts.relationship !== 'independent_unofficial_companion' || !facts.upstream.license.includes('AGPL-3.0')) {
   throw new Error('facts JSON is incomplete')
 }
+if (facts.keywordEvidence?.status !== 'keyword_validation_passed' ||
+  facts.keywordEvidence?.confirmedTrafficKeywords !== 14 ||
+  facts.keywordEvidence?.relativeHeatVsMirofish !== '0.0046-54.4675') {
+  throw new Error('facts JSON keyword evidence is incomplete')
+}
 
 response = await handleRequest(new Request(local + '/missing-page'), { SITE_ASSETS: assetBinding })
 if (response.status !== 404) throw new Error('unknown route should return 404')
@@ -331,4 +349,4 @@ const performanceEvidence = {
 }
 await writeFile(new URL('../reports/performance-evidence.json', import.meta.url), `${JSON.stringify(performanceEvidence, null, 2)}\n`)
 
-console.log('Validated ' + product.brand + ': ' + textFiles.length + ' public text files, ' + urlCount + ' sitemap URLs, independent pricing page, paid planner gate, runtime API, stored analytics mock, Polar checkout mock, facts JSON, 404 handling, and local performance evidence.')
+console.log('Validated ' + product.brand + ': ' + textFiles.length + ' public text files, ' + urlCount + ' sitemap URLs, independent pricing page, paid planner gate, keyword validation pass, runtime API, stored analytics mock, Polar checkout mock, facts JSON, 404 handling, and local performance evidence.')
