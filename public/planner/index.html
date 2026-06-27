@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>OpenMontage Video Brief Planner</title>
+  <meta name="description" content="Preview the OpenMontage Space video production brief planner and unlock full plans after package selection.">
+  <link rel="canonical" href="https://openmontage.space/planner/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="OpenMontage Video Brief Planner">
+  <meta property="og:description" content="Preview the OpenMontage Space video production brief planner and unlock full plans after package selection.">
+  <meta property="og:url" content="https://openmontage.space/planner/">
+  <meta property="og:image" content="https://openmontage.space/assets/openmontage-social-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/styles.css?v=20260627-openmontage-space-v1">
+  
+</head>
+<body data-page="/planner/">
+<header class="site-header">
+    <a class="brand" href="/" aria-label="OpenMontage Space home"><span class="brand-mark">OM</span><span>OpenMontage Space</span></a>
+    <nav aria-label="Primary"><a href="/planner/">Planner</a><a href="/video-pipeline-selector/">Pipelines</a><a href="/pricing/">Pricing</a><a href="/docs/">Docs</a><a href="/keyword-evidence/">Evidence</a></nav>
+  </header>
+<main class="page-main">
+      <section class="page-hero">
+        <p class="eyebrow">Paid workflow planner</p>
+        <h1>OpenMontage video brief planner</h1>
+        <p class="lead">Convert messy creative intent into a production route with pipeline fit, runtime notes, provider choices, cost risk, quality gates, and a delivery checklist.</p>
+      </section>
+      <section class="section"><div class="wrap"><form class="planner-panel" data-planner-form>
+    <label for="brief">Production brief</label>
+    <textarea id="brief" name="goal" rows="7">Make a 75-second documentary montage about city rain at 4am. Use real footage only, no narration, slow music, and a cinematic but honest edit.</textarea>
+    <div class="planner-controls">
+      <label>Target length
+        <select name="scale"><option value="short">30-45 seconds</option><option value="standard" selected>60-90 seconds</option><option value="long">2-4 minutes</option></select>
+      </label>
+      <label>Output
+        <select name="output"><option value="summary">Summary</option><option value="json" selected>JSON plan</option></select>
+      </label>
+      <button type="submit" class="button primary">Generate paid production plan</button>
+    </div>
+    <div class="planner-result" data-planner-result data-access-state="pricing_required">
+      <strong>Sample preview</strong>
+      <p>Suggested path: documentary montage, real-footage corpus, CLIP retrieval, Remotion composition, FFmpeg post-review, and delivery promise checks. Full production plans unlock after package selection.</p>
+    </div>
+  </form></div></section>
+      <section class="section "><div class="wrap"><h2>Planner output fields</h2><div class="matrix">
+        <span>recommended pipeline</span><span>render runtime</span><span>source media path</span><span>provider menu</span><span>budget guardrail</span><span>quality gates</span><span>review checkpoints</span><span>delivery risk</span>
+      </div><p class="note">Full plan generation requires paid access. Unpaid API requests return a payment-required state with this product domain pricing path.</p></div></section>
+    </main>
+<footer class="site-footer">
+  <div>
+    <strong>OpenMontage Space</strong>
+    <p>Independent, unofficial hosted planning companion. Not affiliated with or endorsed by the OpenMontage maintainers.</p>
+  </div>
+  <nav aria-label="Footer">
+    <a href="/privacy/">Privacy</a>
+    <a href="/terms/">Terms</a>
+    <a href="/changelog/">Changelog</a>
+    <a href="/docs/">Docs</a>
+  </nav>
+</footer>
+<script src="/app.js?v=20260627-openmontage-space-v1" defer></script>
+</body>
+</html>

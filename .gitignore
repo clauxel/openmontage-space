@@ -1,0 +1,12 @@
+node_modules
+.wrangler
+.dev.vars
+.preview.log
+.DS_Store
+polar-products.json
+scripts/configure-cloudflare-launch.mjs
+scripts/configure-worker-secrets.mjs
+scripts/create-github-repos.mjs
+scripts/create-polar-products.mjs
+scripts/git-askpass.sh
+reports/workers-dev-evidence.json

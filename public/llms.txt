@@ -1,0 +1,20 @@
+# OpenMontage Space
+
+OpenMontage Space is an independent, unofficial hosted workflow planner for OpenMontage video production briefs.
+
+Canonical site: https://openmontage.space/
+Pricing path: https://openmontage.space/pricing/
+Planner path: https://openmontage.space/planner/
+Support: support@aigeamy.com
+Relationship: independent unofficial companion, not endorsed by OpenMontage maintainers.
+Upstream source note: https://github.com/calesthio/OpenMontage under AGPL-3.0.
+
+Key facts collected 2026-06-27:
+- GitHub stars: 23768
+- Forks: 2646
+- Open issues: 110
+- Main branch latest cloned commit: 49a1e5682572d7b600b6d05aabd0025e6f09dc74
+- Core promise: Plan the video your AI agent can actually ship.
+
+Paid access:
+The functional planner is gated behind package selection and Polar checkout verification. Unpaid planner API requests return a payment-required response.

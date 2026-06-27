@@ -1,0 +1,26 @@
+name = "openmontage-space"
+main = "worker/index.js"
+compatibility_date = "2026-06-27"
+workers_dev = true
+routes = [
+  { pattern = "openmontage.space/*", zone_name = "openmontage.space" },
+  { pattern = "www.openmontage.space/*", zone_name = "openmontage.space" }
+]
+
+[vars]
+APP_ORIGIN = "https://openmontage.space"
+CANONICAL_HOST = "openmontage.space"
+SITE_MODE = "independent_unofficial_companion"
+
+[[d1_databases]]
+binding = "ANALYTICS_DB"
+database_name = "openmontage-space-analytics"
+database_id = "2c621e6b-a634-42aa-ad11-7106d1d8d5c4"
+
+[assets]
+directory = "./public"
+binding = "SITE_ASSETS"
+not_found_handling = "none"
+run_worker_first = [
+  "/*"
+]

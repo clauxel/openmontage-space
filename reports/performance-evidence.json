@@ -1,0 +1,28 @@
+{
+  "tool": "local_static_fallback",
+  "collectedAt": "2026-06-27T03:27:46.327Z",
+  "checkedUrls": [
+    "/",
+    "/pricing/",
+    "/planner/"
+  ],
+  "assets": {
+    "cssBytes": 5917,
+    "cssGzipBytes": 2009,
+    "jsBytes": 4365,
+    "jsGzipBytes": 1548,
+    "heroImageBytes": 275512,
+    "socialImageBytes": 113953
+  },
+  "firstPacketHtmlContains": {
+    "homepageH1": true,
+    "pricingCta": true,
+    "paidGate": true
+  },
+  "budget": {
+    "criticalJsGzipUnder500kb": true,
+    "criticalCssGzipUnder150kb": true,
+    "heroImageUnder1mb": true
+  },
+  "result": "pass_local_fallback"
+}

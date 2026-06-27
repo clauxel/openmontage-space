@@ -1,0 +1,300 @@
+{
+  "brand": "OpenMontage Space",
+  "domain": "openmontage.space",
+  "origin": "https://openmontage.space",
+  "relationship": "independent_unofficial_companion",
+  "upstream": {
+    "name": "OpenMontage",
+    "repo": "https://github.com/calesthio/OpenMontage",
+    "license": "AGPL-3.0",
+    "latestCommit": "49a1e5682572d7b600b6d05aabd0025e6f09dc74",
+    "latestCommitDate": "2026-06-26T21:29:55Z",
+    "publicMetadataCollectedAt": "2026-06-27T03:27:46.277Z",
+    "stars": 23768,
+    "forks": 2646,
+    "watchers": 23768,
+    "openIssues": 110,
+    "defaultBranch": "main",
+    "primaryLanguage": "Python",
+    "topics": [
+      "agentic-ai",
+      "video-production",
+      "video-generation",
+      "remotion",
+      "ffmpeg",
+      "text-to-speech"
+    ]
+  },
+  "slogan": {
+    "final": "Plan the video your AI agent can actually ship.",
+    "candidates": [
+      "Plan the video your AI agent can actually ship.",
+      "Turn a reference clip into a budgeted OpenMontage production plan.",
+      "Give every AI video idea a pipeline, budget, and quality gate before production starts."
+    ]
+  },
+  "positioning": {
+    "audience": "founders, creators, developer advocates, educators, and teams using AI coding assistants to produce videos with OpenMontage",
+    "offer": "hosted workflow planner, pipeline selector, cost estimator, and quality-gate checklist",
+    "monetization": "one-time Polar checkout for planning packages",
+    "ctaPath": "/pricing/"
+  },
+  "keywordValidation": {
+    "status": "pending_mirofish_trends",
+    "source": "repo/docs/SERP candidate pool; official Google Trends DOM comparison still pending",
+    "anchor": "mirofish",
+    "relativeHeatUnit": "termAvg / mirofishAvg",
+    "confirmedTrafficKeywords": 0,
+    "requiredPrimary": 6,
+    "requiredLongTail": 8,
+    "relativeHeatValue": "-",
+    "blocker": "blocked_trends_pending_browser_dom"
+  },
+  "keywords": [
+    {
+      "term": "AI video production",
+      "type": "primary",
+      "primaryPage": "/",
+      "themeRelevance": "strong",
+      "relevanceReason": "Core category for the hosted production-planning workflow.",
+      "relativeHeatVsMirofish": "-",
+      "validationState": "pending_same_request_trends",
+      "blocker": "blocked_trends_pending_browser_dom",
+      "evidenceLevel": "source_derived_candidate",
+      "confidence": "medium"
+    },
+    {
+      "term": "agentic video production",
+      "type": "primary",
+      "primaryPage": "/",
+      "themeRelevance": "strong",
+      "relevanceReason": "Matches OpenMontage positioning and the site promise.",
+      "relativeHeatVsMirofish": "-",
+      "validationState": "pending_same_request_trends",
+      "blocker": "blocked_trends_pending_browser_dom",
+      "evidenceLevel": "source_derived_candidate",
+      "confidence": "medium"
+    },
+    {
+      "term": "OpenMontage",
+      "type": "primary",
+      "primaryPage": "/",
+      "themeRelevance": "strong",
+      "relevanceReason": "Exact upstream project entity and domain brand.",
+      "relativeHeatVsMirofish": "-",
+      "validationState": "pending_same_request_trends",
+      "blocker": "blocked_trends_pending_browser_dom",
+      "evidenceLevel": "source_derived_candidate",
+      "confidence": "medium"
+    },
+    {
+      "term": "AI video editor",
+      "type": "primary",
+      "primaryPage": "/video-pipeline-selector/",
+      "themeRelevance": "strong",
+      "relevanceReason": "Common selection intent for teams comparing production approaches.",
+      "relativeHeatVsMirofish": "-",
+      "validationState": "pending_same_request_trends",
+      "blocker": "blocked_trends_pending_browser_dom",
+      "evidenceLevel": "source_derived_candidate",
+      "confidence": "medium"
+    },
+    {
+      "term": "text to video workflow",
+      "type": "primary",
+      "primaryPage": "/planner/",
+      "themeRelevance": "strong",
+      "relevanceReason": "Maps user prompts to an auditable production plan.",
+      "relativeHeatVsMirofish": "-",
+      "validationState": "pending_same_request_trends",
+      "blocker": "blocked_trends_pending_browser_dom",
+      "evidenceLevel": "source_derived_candidate",
+      "confidence": "medium"
+    },
+    {
+      "term": "video production pipeline",
+      "type": "primary",
+      "primaryPage": "/video-pipeline-selector/",
+      "themeRelevance": "strong",
+      "relevanceReason": "Directly served by the pipeline selector page.",
+      "relativeHeatVsMirofish": "-",
+      "validationState": "pending_same_request_trends",
+      "blocker": "blocked_trends_pending_browser_dom",
+      "evidenceLevel": "source_derived_candidate",
+      "confidence": "medium"
+    },
+    {
+      "term": "open source AI video production system",
+      "type": "long-tail",
+      "primaryPage": "/open-source-ai-video/",
+      "themeRelevance": "strong",
+      "relevanceReason": "Explains the AGPLv3 upstream and open-source production stack.",
+      "relativeHeatVsMirofish": "-",
+      "validationState": "pending_same_request_trends",
+      "blocker": "blocked_trends_pending_browser_dom",
+      "evidenceLevel": "source_derived_candidate",
+      "confidence": "medium"
+    },
+    {
+      "term": "AI coding assistant video workflow",
+      "type": "long-tail",
+      "primaryPage": "/planner/",
+      "themeRelevance": "strong",
+      "relevanceReason": "OpenMontage works through AI coding assistants.",
+      "relativeHeatVsMirofish": "-",
+      "validationState": "pending_same_request_trends",
+      "blocker": "blocked_trends_pending_browser_dom",
+      "evidenceLevel": "source_derived_candidate",
+      "confidence": "medium"
+    },
+    {
+      "term": "reference video production plan",
+      "type": "long-tail",
+      "primaryPage": "/reference-video-brief/",
+      "themeRelevance": "strong",
+      "relevanceReason": "Serves reference-video-to-brief workflow intent.",
+      "relativeHeatVsMirofish": "-",
+      "validationState": "pending_same_request_trends",
+      "blocker": "blocked_trends_pending_browser_dom",
+      "evidenceLevel": "source_derived_candidate",
+      "confidence": "medium"
+    },
+    {
+      "term": "AI video cost estimator",
+      "type": "long-tail",
+      "primaryPage": "/ai-video-cost-estimator/",
+      "themeRelevance": "strong",
+      "relevanceReason": "Serves pre-production budget and provider-fit intent.",
+      "relativeHeatVsMirofish": "-",
+      "validationState": "pending_same_request_trends",
+      "blocker": "blocked_trends_pending_browser_dom",
+      "evidenceLevel": "source_derived_candidate",
+      "confidence": "medium"
+    },
+    {
+      "term": "Remotion video pipeline",
+      "type": "long-tail",
+      "primaryPage": "/video-pipeline-selector/",
+      "themeRelevance": "strong",
+      "relevanceReason": "Maps the Remotion runtime to suitable video briefs.",
+      "relativeHeatVsMirofish": "-",
+      "validationState": "pending_same_request_trends",
+      "blocker": "blocked_trends_pending_browser_dom",
+      "evidenceLevel": "source_derived_candidate",
+      "confidence": "medium"
+    },
+    {
+      "term": "agentic video quality gates",
+      "type": "long-tail",
+      "primaryPage": "/quality-gates/",
+      "themeRelevance": "strong",
+      "relevanceReason": "Serves delivery-promise and review-gate intent.",
+      "relativeHeatVsMirofish": "-",
+      "validationState": "pending_same_request_trends",
+      "blocker": "blocked_trends_pending_browser_dom",
+      "evidenceLevel": "source_derived_candidate",
+      "confidence": "medium"
+    },
+    {
+      "term": "documentary montage with stock footage",
+      "type": "long-tail",
+      "primaryPage": "/reference-video-brief/",
+      "themeRelevance": "strong",
+      "relevanceReason": "Matches OpenMontage real-footage montage workflow.",
+      "relativeHeatVsMirofish": "-",
+      "validationState": "pending_same_request_trends",
+      "blocker": "blocked_trends_pending_browser_dom",
+      "evidenceLevel": "source_derived_candidate",
+      "confidence": "medium"
+    },
+    {
+      "term": "AI video pipeline selector",
+      "type": "long-tail",
+      "primaryPage": "/video-pipeline-selector/",
+      "themeRelevance": "strong",
+      "relevanceReason": "Exact site feature and conversion path.",
+      "relativeHeatVsMirofish": "-",
+      "validationState": "pending_same_request_trends",
+      "blocker": "blocked_trends_pending_browser_dom",
+      "evidenceLevel": "source_derived_candidate",
+      "confidence": "medium"
+    }
+  ],
+  "pricing": {
+    "provider": "Polar",
+    "defaultBilling": "annual",
+    "noAutomaticRenewal": true,
+    "plans": [
+      {
+        "id": "starter",
+        "name": "Starter",
+        "monthly": 9,
+        "annualMonthly": 4.5,
+        "annualDueToday": 54
+      },
+      {
+        "id": "pro",
+        "name": "Pro",
+        "monthly": 29,
+        "annualMonthly": 14.5,
+        "annualDueToday": 174
+      },
+      {
+        "id": "enterprise",
+        "name": "Enterprise",
+        "monthly": 59,
+        "annualMonthly": 29.5,
+        "annualDueToday": 354
+      }
+    ]
+  },
+  "trustDataLedger": [
+    {
+      "id": "github-public-metadata",
+      "label": "Real",
+      "source": "GitHub REST API repository metadata",
+      "collectedAt": "2026-06-27T03:27:46.277Z",
+      "fields": [
+        "stars",
+        "forks",
+        "watchers",
+        "openIssues",
+        "pushedAt",
+        "topics",
+        "license"
+      ],
+      "displayDecision": "public_homepage_and_docs",
+      "confidence": "high"
+    },
+    {
+      "id": "source-code-scan",
+      "label": "Real",
+      "source": "Local clone of calesthio/OpenMontage main branch",
+      "collectedAt": "2026-06-27T03:27:46.277Z",
+      "fields": [
+        "README",
+        "LICENSE",
+        "pipeline_defs",
+        "skills",
+        "requirements.txt",
+        "remotion-composer/package.json"
+      ],
+      "displayDecision": "public_docs_and_report",
+      "confidence": "high"
+    },
+    {
+      "id": "sample-production-brief",
+      "label": "Sample",
+      "generationMethod": "Generated from documented OpenMontage pipeline concepts and pricing model",
+      "assumptions": "Used as a non-traction sample output; not presented as real user usage or revenue.",
+      "displayDecision": "public_planner_preview",
+      "confidence": "medium"
+    }
+  ],
+  "gates": {
+    "trust_data_gate": "pass_local",
+    "trust_content_gate": "pass_local",
+    "performance_gate": "pending_local_evidence",
+    "keyword_gate": "blocked_trends_pending_browser_dom"
+  }
+}
