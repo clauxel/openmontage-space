@@ -2,6 +2,8 @@
 
 Independent, unofficial hosted workflow planner for teams evaluating OpenMontage video production pipelines.
 
+Production site: <https://openmontage.space/>
+
 The public site is generated into `public/` and served by a Cloudflare Worker. It includes:
 
 - Static SEO/GEO pages with one H1, canonical URL, Open Graph URL, sitemap, robots, and llms.txt.
