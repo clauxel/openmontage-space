@@ -556,7 +556,7 @@ await writePublic('robots.txt', robots)
 await writePublic('sitemap.xml', sitemap)
 await writePublic('llms.txt', llms)
 await writePublic('product.json', `${JSON.stringify(product, null, 2)}\n`)
-await writePublic('BingSiteAuth.xml', '<?xml version="1.0"?><users><user>pending-openmontage-space</user></users>\n')
+await writePublic('BingSiteAuth.xml', '<?xml version="1.0"?><users><user>94D388E2CA0B71EC5A04D17A6A46E444</user></users>\n')
 await writePublic('590a3ab02487cffe4cfd55b0df769f65.txt', '590a3ab02487cffe4cfd55b0df769f65\n')
 
 console.log(`Generated ${pages.length} pages for ${product.brand}.`)

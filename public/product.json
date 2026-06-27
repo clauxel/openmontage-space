@@ -9,7 +9,7 @@
     "license": "AGPL-3.0",
     "latestCommit": "49a1e5682572d7b600b6d05aabd0025e6f09dc74",
     "latestCommitDate": "2026-06-26T21:29:55Z",
-    "publicMetadataCollectedAt": "2026-06-27T03:27:46.277Z",
+    "publicMetadataCollectedAt": "2026-06-27T03:45:14.568Z",
     "stars": 23768,
     "forks": 2646,
     "watchers": 23768,
@@ -253,7 +253,7 @@
       "id": "github-public-metadata",
       "label": "Real",
       "source": "GitHub REST API repository metadata",
-      "collectedAt": "2026-06-27T03:27:46.277Z",
+      "collectedAt": "2026-06-27T03:45:14.568Z",
       "fields": [
         "stars",
         "forks",
@@ -270,7 +270,7 @@
       "id": "source-code-scan",
       "label": "Real",
       "source": "Local clone of calesthio/OpenMontage main branch",
-      "collectedAt": "2026-06-27T03:27:46.277Z",
+      "collectedAt": "2026-06-27T03:45:14.568Z",
       "fields": [
         "README",
         "LICENSE",
